@@ -1,0 +1,9 @@
+PUT http://localhost:8080/1
+Content-Type: application/json
+
+{
+  "nome":"Teste",
+  "descricao": "Testete",
+  "preco": 20,
+  "estoque": 1
+}
