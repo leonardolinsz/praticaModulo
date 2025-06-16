@@ -1,0 +1,9 @@
+POST http://localhost:8080/1
+Content-Type: application/json
+
+{
+  "nome":"Teste",
+  "data_pedido": "02-02-2022",
+  "status": "Pendente",
+  "total_pedido": 1
+}
