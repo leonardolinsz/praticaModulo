@@ -37,4 +37,9 @@ public class MinaController {
     public ResponseEntity<Mina> atualizarMina(@PathVariable long id, @RequestBody @Valid Mina Mina) {
         return ResponseEntity.ok(service.atualizarMina(id, Mina));
     }
+
+    @GetMapping("/selecionar/{id}")
+    public Mina listarMinas(@PathVariable long id){
+        return service.buscarMinaPorId(id);
+    }
 }
